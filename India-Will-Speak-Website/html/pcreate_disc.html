@@ -1,0 +1,321 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title>Create Discussions</title>-->
+<!--<link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+<!--<script src="../js/bootstrap.min.js"></script>-->
+<!--<script src="../js/jquery-1.11.1.min.js"></script>-->
+<!--<style type="text/css">-->
+<!--  body {-->
+<!--    padding-top:20px;-->
+<!--      }-->
+<!--</style>-->
+<!--<script type="text/javascript">-->
+<!--    function validForm(){-->
+<!--      var c = document.forms["topic"]["comment"].value;-->
+<!--      var c1 = document.forms["topic"]["comment1"].value;-->
+<!--      var t1 = document.forms["topic"]["first"].value;-->
+<!--      var t2 = document.forms["topic"]["second"].value;-->
+<!--      var t3 = document.forms["topic"]["third"].value;-->
+<!--      if(c.length==0 || c1.length==0 || t1.length==0 || t2.length==0 || t3.length==0){-->
+<!--        alert("One or more field is empty.");-->
+<!--        return false;-->
+<!--      }else{-->
+<!--        if(t1!="hindu" && t1!="Hindu" && t1!="religion" && t1!="terrorism" && t1!="populism" && t1!="Fascism" && t1!="fascism" && t1!="Religion" && t1!="Terrorism" && t1!="Populism" && t1!="Democracy" && t1!="democracy" && t1!="Politics" && t1!="politics" && t1!="Islam" && t1!="islam" && t1!="Journalism" && t1!="journalism" && t1!="Politician" && t1!="politician" && t1!="USA" && t1!="usa" && t1!="India" && t1!="india" && t1!="Trump" && t1!="trump" && t1!="Modi" && t1!="modi" && t1!="economy" && t1!="Economy" && t1!="Finance" && t1!="finance" && t1!="business" && t1!="Business" && t1!="world" && t1!="World" && t1!="world economy" && t1!="World Economy" && t1!="trade" && t1!="Trade" && t1!="hinduism" && t1!="Hinduism" && t1!="advocacy" && t1!="social issue" && t1!="Advocacy" && t1!="Social Issue" && t1!="social awareness" && t1!="Social Awareness" && t1!="Entrepreneurship" && t1!="entrepreneurship" && t1!="Entrepreneurs" && t1!="entrepreneurs" && t1!="innovation" && t1!="Innovation" && t1!="media" && t1!="Media" && t1!="states" && t1!="States" && t1!="marketing" && t1!="Marketing" && t1!="advertising" && t1!="Advertising" && t1!="Religious politics" && t1!="religious politics" && t1!="Drugs and Narcotics" && t1!="drugs and narcotics"){-->
+<!--            alert("Please choose tags from the options below.");-->
+<!--            return false;-->
+<!--        }else{-->
+<!--            if(t2!="hindu" && t2!="Hindu" && t2!="religion" && t2!="terrorism" && t2!="populism" && t2!="Fascism" && t2!="fascism" && t2!="Religion" && t2!="Terrorism" && t2!="Populism" && t2!="Democracy" && t2!="democracy" && t2!="Politics" && t2!="politics" && t2!="Islam" && t2!="islam" && t2!="Journalism" && t2!="journalism" && t2!="Politician" && t2!="politician" && t2!="USA" && t2!="usa" && t2!="India" && t2!="india" && t2!="Trump" && t2!="trump" && t2!="Modi" && t2!="modi" && t2!="economy" && t2!="Economy" && t2!="Finance" && t2!="finance" && t2!="business" && t2!="Business" && t2!="world" && t2!="World" && t2!="world economy" && t2!="World Economy" && t2!="trade" && t2!="Trade" && t2!="Hinduism" && t2!="hinduism" && t2!="advocacy" && t2!="social issue" && t2!="Advocacy" && t2!="Social Issue" && t2!="social awareness" && t2!="Social Awareness" && t2!="Entrepreneurship" && t2!="entrepreneurship" && t2!="Entrepreneurs" && t2!="entrepreneurs" && t2!="innovation" && t2!="Innovation" && t2!="media" && t2!="Media" && t2!="states" && t2!="States" && t2!="marketing" && t2!="Marketing" && t2!="advertising" && t2!="Advertising" && t2!="Religious politics" && t2!="religious politics" && t2!="Drugs and Narcotics" && t2!="drugs and narcotics"){-->
+<!--               alert("Please choose tags from the options below.");-->
+<!--            return false; -->
+<!--            }else{-->
+<!--                if(t3!="hindu" && t3!="Hindu" && t3!="religion" && t3!="terrorism" && t3!="populism" && t3!="Fascism" && t3!="fascism" && t3!="Religion" && t3!="Terrorism" && t3!="Populism" && t3!="Democracy" && t3!="democracy" && t3!="Politics" && t3!="politics" && t3!="Islam" && t3!="islam" && t3!="Journalism" && t3!="journalism" && t3!="Politician" && t3!="politician" && t3!="USA" && t3!="usa" && t3!="India" && t3!="india" && t3!="Trump" && t3!="trump" && t3!="Modi" && t3!="modi" && t3!="economy" && t3!="Economy" && t3!="Finance" && t3!="finance" && t3!="business" && t3!="Business" && t3!="world" && t3!="World" && t3!="world economy" && t3!="World Economy" && t3!="trade" && t3!="Trade" && t3!="hinduism" && t3!="Hinduism" && t3!="advocacy" && t3!="social issue" && t3!="Advocacy" && t3!="Social Issue" && t3!="social awareness" && t3!="Social Awareness" && t3!="Entrepreneurship" && t3!="entrepreneurship" && t3!="Entrepreneurs" && t3!="entrepreneurs" && t3!="innovation" && t3!="Innovation" && t3!="media" && t3!="Media" && t3!="states" && t3!="States" && t3!="marketing" && t3!="Marketing" && t3!="advertising" && t3!="Advertising" && t3!="Religious politics" && t3!="religious politics" && t3!="Drugs and Narcotics" && t3!="drugs and narcotics"){-->
+<!--                   alert("Please choose tags from the options below.");-->
+<!--            return false; -->
+<!--                }else{-->
+<!--                    return true;-->
+<!--                }-->
+<!--            }-->
+<!--        }-->
+<!--      }-->
+<!--    }-->
+<!--</script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="container">-->
+<!--	<div class="row">-->
+<!--      <div class="col-md-6 col-md-offset-3">-->
+<!--        <div class="well well-sm">-->
+<!--          <form class="form-horizontal" action="../php/create_disc.php" method="post" name="topic" onsubmit="return validForm()">-->
+<!--          <fieldset>-->
+<!--            <legend class="text-center">Discuss</legend>-->
+            <!-- Message body -->
+<!--            <div class="form-group">-->
+<!--              <label class="col-md-3 control-label" for="message">Your heading</label>-->
+<!--              <div class="col-md-9">-->
+<!--                <textarea class="form-control" id="message" name="comment" placeholder="Please enter heading of your discussion here. Remember to not use more than 40 words." rows="5"></textarea>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="form-group">-->
+<!--              <label class="col-md-3 control-label" for="message">Overview</label>-->
+<!--              <div class="col-md-9">-->
+<!--                <textarea class="form-control" id="message" name="comment1" placeholder="Please enter details about your discussion here." rows="5"></textarea>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <label class="col-md-3 control-label" for="message">First Tag</label>-->
+<!--              <div class="col-md-9">-->
+<!--                <input type="text" class="form-control" id="inputCity" placeholder="Select a tag from below" name="first">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <label class="col-md-3 control-label" for="message">Second Tag</label>-->
+<!--              <div class="col-md-9">-->
+<!--                <input type="text" class="form-control" id="inputCity" placeholder="Select a tag from below" name="second">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <label class="col-md-3 control-label" for="message">Third Tag</label>-->
+<!--              <div class="col-md-9">-->
+<!--                <input type="text" class="form-control" id="inputCity" placeholder="Select a tag from below" name="third">-->
+<!--              </div>-->
+<!--            </div>-->
+            <!-- Form actions -->
+<!--            <div class="form-group">-->
+<!--              <div class="col-md-12 text-right">-->
+<!--                <button type="submit" class="btn btn-primary btn-lg">Submit</button>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </fieldset>-->
+<!--          </form>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--	</div>-->
+<!--</div>-->
+<!--    <section id="footer">-->
+<!--        <div class="container">-->
+<!--            <div class="row text-center text-xs-center text-sm-left text-md-left">-->
+<!--                <div class="col-xs-12 col-sm-4 col-md-4">-->
+<!--                    <ul class="list-unstyled quick-links">-->
+<!--                        <li><a href="../topics/hindu.php">Hindu</a></li>-->
+<!--                        <li><a href="../topics/religion.php">Religion</a></li>-->
+<!--                        <li><a href="../topics/terrorism.php">Terrorism</a></li>-->
+<!--                        <li><a href="../topics/populism.php">Populism</a></li>-->
+<!--                        <li><a href="../topics/fascism.php">Fascism</a></li>-->
+<!--                        <li><a href="../topics/democracy.php">Democracy</a></li>-->
+<!--                        <li><a href="../topics/politics.php">Politics</a></li>-->
+<!--                        <li><a href="../topics/islam.php">Islam</a></li>-->
+<!--                        <li><a href="../topics/rp.php">Religious Politics</a></li>-->
+<!--                        <li><a href="../topics/hinduism.php">Hinduism</a></li>-->
+<!--                        <li><a href="../topics/journalism.php">Journalism</a></li>-->
+<!--                        <li><hr></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="col-xs-12 col-sm-4 col-md-4">-->
+<!--                    <ul class="list-unstyled quick-links">-->
+<!--                        <li><a href="../topics/usa.php">USA</a></li>-->
+<!--                        <li><a href="../topics/india.php">India</a></li>-->
+<!--                        <li><a href="../topics/trump.php">Trump</a></li>-->
+<!--                        <li><a href="../topics/modi.php">Modi</a></li>-->
+<!--                        <li><a href="../topics/economy.php">Economy</a></li>-->
+<!--                        <li><a href="../topics/finance.php">Finance</a></li>-->
+<!--                        <li><a href="../topics/business.php">Business</a></li>-->
+<!--                        <li><a href="../topics/world.php">World</a></li>-->
+<!--                        <li><a href="../topics/we.php">World Economy</a></li>-->
+<!--                        <li><a href="../topics/media.php">Media</a></li>-->
+<!--                        <li><a href="../topics/politician.php">Politician</a></li>-->
+<!--                        <li><hr></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="col-xs-12 col-sm-4 col-md-4">-->
+<!--                    <ul class="list-unstyled quick-links">-->
+<!--                        <li><a href="../topics/trade.php">Trade</a></li>-->
+<!--                        <li><a href="../topics/advocacy.php">Advocacy</a></li>-->
+<!--                        <li><a href="../topics/sc.php">Social Issue</a></li>-->
+<!--                        <li><a href="../topics/sa.php">Social Awareness</a></li>-->
+<!--                        <li><a href="../topics/entrepreneurship.php">Entrepreneurship</a></li>-->
+<!--                        <li><a href="../topics/entrepreneurs.php">Entrepreneurs</a></li>-->
+<!--                        <li><a href="../topics/innovation.php">Innovation</a></li>-->
+<!--                        <li><a href="../topics/states.php">States</a></li>-->
+<!--                        <li><a href="../topics/marketing.php">Marketing</a></li>-->
+<!--                        <li><a href="../topics/advertising.php">Advertising</a></li>-->
+<!--                        <li><a href="../topics/dan.php">Drugs and Narcotics</a></li>-->
+<!--                        <li><hr></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Discussions</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<link rel="shortcut icon" href="../images/fav.png" type="image/png">
+<style type="text/css">
+  body {
+    padding-top:20px;
+      }
+</style>
+<script type="text/javascript">
+    function validForm(){
+      var c = document.forms["topic"]["comment"].value;
+      var c1 = document.forms["topic"]["comment1"].value;
+      var t1 = document.forms["topic"]["first"].value;
+      var t2 = document.forms["topic"]["second"].value;
+      var t3 = document.forms["topic"]["third"].value;
+      if(c.length==0 || c1.length==0 || t1.length==0 || t2.length==0 || t3.length==0){
+        alert("One or more field is empty.");
+        return false;
+      }else{
+        if(t1!="hindu" && t1!="Hindu" && t1!="religion" && t1!="terrorism" && t1!="populism" && t1!="Fascism" && t1!="fascism" && t1!="Religion" && t1!="Terrorism" && t1!="Populism" && t1!="Democracy" && t1!="democracy" && t1!="Politics" && t1!="politics" && t1!="Islam" && t1!="islam" && t1!="Journalism" && t1!="journalism" && t1!="Politician" && t1!="politician" && t1!="USA" && t1!="usa" && t1!="India" && t1!="india" && t1!="Trump" && t1!="trump" && t1!="Modi" && t1!="modi" && t1!="economy" && t1!="Economy" && t1!="Finance" && t1!="finance" && t1!="business" && t1!="Business" && t1!="world" && t1!="World" && t1!="world economy" && t1!="World Economy" && t1!="trade" && t1!="Trade" && t1!="hinduism" && t1!="Hinduism" && t1!="advocacy" && t1!="social issue" && t1!="Advocacy" && t1!="Social Issue" && t1!="social awareness" && t1!="Social Awareness" && t1!="Entrepreneurship" && t1!="entrepreneurship" && t1!="Entrepreneurs" && t1!="entrepreneurs" && t1!="innovation" && t1!="Innovation" && t1!="media" && t1!="Media" && t1!="states" && t1!="States" && t1!="marketing" && t1!="Marketing" && t1!="advertising" && t1!="Advertising" && t1!="Religious politics" && t1!="religious politics" && t1!="Drugs and Narcotics" && t1!="drugs and narcotics"){
+            alert("Please choose tags from the options below.");
+            return false;
+        }else{
+            if(t2!="hindu" && t2!="Hindu" && t2!="religion" && t2!="terrorism" && t2!="populism" && t2!="Fascism" && t2!="fascism" && t2!="Religion" && t2!="Terrorism" && t2!="Populism" && t2!="Democracy" && t2!="democracy" && t2!="Politics" && t2!="politics" && t2!="Islam" && t2!="islam" && t2!="Journalism" && t2!="journalism" && t2!="Politician" && t2!="politician" && t2!="USA" && t2!="usa" && t2!="India" && t2!="india" && t2!="Trump" && t2!="trump" && t2!="Modi" && t2!="modi" && t2!="economy" && t2!="Economy" && t2!="Finance" && t2!="finance" && t2!="business" && t2!="Business" && t2!="world" && t2!="World" && t2!="world economy" && t2!="World Economy" && t2!="trade" && t2!="Trade" && t2!="Hinduism" && t2!="hinduism" && t2!="advocacy" && t2!="social issue" && t2!="Advocacy" && t2!="Social Issue" && t2!="social awareness" && t2!="Social Awareness" && t2!="Entrepreneurship" && t2!="entrepreneurship" && t2!="Entrepreneurs" && t2!="entrepreneurs" && t2!="innovation" && t2!="Innovation" && t2!="media" && t2!="Media" && t2!="states" && t2!="States" && t2!="marketing" && t2!="Marketing" && t2!="advertising" && t2!="Advertising" && t2!="Religious politics" && t2!="religious politics" && t2!="Drugs and Narcotics" && t2!="drugs and narcotics"){
+               alert("Please choose tags from the options below.");
+            return false; 
+            }else{
+                if(t3!="hindu" && t3!="Hindu" && t3!="religion" && t3!="terrorism" && t3!="populism" && t3!="Fascism" && t3!="fascism" && t3!="Religion" && t3!="Terrorism" && t3!="Populism" && t3!="Democracy" && t3!="democracy" && t3!="Politics" && t3!="politics" && t3!="Islam" && t3!="islam" && t3!="Journalism" && t3!="journalism" && t3!="Politician" && t3!="politician" && t3!="USA" && t3!="usa" && t3!="India" && t3!="india" && t3!="Trump" && t3!="trump" && t3!="Modi" && t3!="modi" && t3!="economy" && t3!="Economy" && t3!="Finance" && t3!="finance" && t3!="business" && t3!="Business" && t3!="world" && t3!="World" && t3!="world economy" && t3!="World Economy" && t3!="trade" && t3!="Trade" && t3!="hinduism" && t3!="Hinduism" && t3!="advocacy" && t3!="social issue" && t3!="Advocacy" && t3!="Social Issue" && t3!="social awareness" && t3!="Social Awareness" && t3!="Entrepreneurship" && t3!="entrepreneurship" && t3!="Entrepreneurs" && t3!="entrepreneurs" && t3!="innovation" && t3!="Innovation" && t3!="media" && t3!="Media" && t3!="states" && t3!="States" && t3!="marketing" && t3!="Marketing" && t3!="advertising" && t3!="Advertising" && t3!="Religious politics" && t3!="religious politics" && t3!="Drugs and Narcotics" && t3!="drugs and narcotics"){
+                   alert("Please choose tags from the options below.");
+            return false; 
+                }else{
+                    return true;
+                }
+            }
+        }
+      }
+    }
+</script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="../php/pcreate_disc.php" method="post" name="topic" onsubmit="return validForm()" enctype="multipart/form-data">
+          <fieldset>
+            <legend class="text-center">Discuss</legend>
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your heading</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="comment" placeholder="Please enter heading of your discussion here. Remember to not use more than 40 words." rows="5"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Overview</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="comment1" placeholder="Please enter details about your discussion here." rows="5"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">First Tag</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="inputCity" placeholder="Select a tag from below" name="first">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Second Tag</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="inputCity" placeholder="Select a tag from below" name="second">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Third Tag</label>
+              <div class="col-md-9">
+                <input type="text" class="form-control" id="inputCity" placeholder="Select a tag from below" name="third">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Image File</label>
+              <div class="col-md-9">
+                <input type="file" class="form-control" id="fileToUpload" name="fileToUpload">
+                <!--<input type="file" id="fileToUpload" name="fileToUpload">-->
+              </div>
+            </div>
+            
+            <!--<form action="upload.php" method="post" enctype="multipart/form-data">-->
+    <!--Select image to upload:-->
+    <!--<input type="file" name="fileToUpload" id="fileToUpload">-->
+    <!--<input type="submit" value="Upload Image" name="submit">-->
+<!--</form>-->
+            
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+</div>
+    <section id="footer">
+        <div class="container">
+            <div class="row text-center text-xs-center text-sm-left text-md-left">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="../topics/hindu.php">Hindu</a></li>
+                        <li><a href="../topics/religion.php">Religion</a></li>
+                        <li><a href="../topics/terrorism.php">Terrorism</a></li>
+                        <li><a href="../topics/populism.php">Populism</a></li>
+                        <li><a href="../topics/fascism.php">Fascism</a></li>
+                        <li><a href="../topics/democracy.php">Democracy</a></li>
+                        <li><a href="../topics/politics.php">Politics</a></li>
+                        <li><a href="../topics/islam.php">Islam</a></li>
+                        <li><a href="../topics/rp.php">Religious Politics</a></li>
+                        <li><a href="../topics/hinduism.php">Hinduism</a></li>
+                        <li><a href="../topics/journalism.php">Journalism</a></li>
+                        <li><hr></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="../topics/usa.php">USA</a></li>
+                        <li><a href="../topics/india.php">India</a></li>
+                        <li><a href="../topics/trump.php">Trump</a></li>
+                        <li><a href="../topics/modi.php">Modi</a></li>
+                        <li><a href="../topics/economy.php">Economy</a></li>
+                        <li><a href="../topics/finance.php">Finance</a></li>
+                        <li><a href="../topics/business.php">Business</a></li>
+                        <li><a href="../topics/world.php">World</a></li>
+                        <li><a href="../topics/we.php">World Economy</a></li>
+                        <li><a href="../topics/media.php">Media</a></li>
+                        <li><a href="../topics/politician.php">Politician</a></li>
+                        <li><hr></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <ul class="list-unstyled quick-links">
+                        <li><a href="../topics/trade.php">Trade</a></li>
+                        <li><a href="../topics/advocacy.php">Advocacy</a></li>
+                        <li><a href="../topics/sc.php">Social Issue</a></li>
+                        <li><a href="../topics/sa.php">Social Awareness</a></li>
+                        <li><a href="../topics/entrepreneurship.php">Entrepreneurship</a></li>
+                        <li><a href="../topics/entrepreneurs.php">Entrepreneurs</a></li>
+                        <li><a href="../topics/innovation.php">Innovation</a></li>
+                        <li><a href="../topics/states.php">States</a></li>
+                        <li><a href="../topics/marketing.php">Marketing</a></li>
+                        <li><a href="../topics/advertising.php">Advertising</a></li>
+                        <li><a href="../topics/dan.php">Drugs and Narcotics</a></li>
+                        <li><hr></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invite your friends</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<link rel="shortcut icon" href="../images/fav.png" type="image/png">
+<style type="text/css">
+  body {
+    padding-top:20px;
+      }
+</style>
+<script type="text/javascript">
+    function validForm(){
+       var i = document.forms["feedback"]["identity"].value;
+       var e1 = document.forms["feedback"]["email1"].value;
+       var e2 = document.forms["feedback"]["email2"].value;
+       var e3 = document.forms["feedback"]["email3"].value;
+       var e4 = document.forms["feedback"]["email4"].value;
+       if(i.length==0){
+           alert("ID field cannot be empty.");
+           return false;
+       }else{
+           var email_patt = /^[a-zA-Z0-9]+[@]+[a-zA-Z0-9]+[.]+[a-zA-Z0-9]+$/;
+       if((e1.length!=0 && !(e1.match(email_patt))) || (e2.length!=0 && !(e2.match(email_patt))) || (e3.length!=0 && !(e3.match(email_patt))) || (e4.length!=0 && !(e4.match(email_patt)))){
+           alert("Please enter a proper email-id.");
+           return false;
+       }else{
+           return true;
+       }
+       }
+       
+    }
+</script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="../php/invite.php" method="post" name="feedback" onsubmit="return validForm()">
+          <fieldset>
+            <legend class="text-center">Place your point of view</legend>
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Email address</label>
+              <div class="col-md-9">
+                <input id="email" name="email1" type="text" placeholder="Enter the email address of friend" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Email address</label>
+              <div class="col-md-9">
+                <input id="email" name="email2" type="text" placeholder="Enter the email address of friend" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Email address</label>
+              <div class="col-md-9">
+                <input id="email" name="email3" type="text" placeholder="Enter the email address of friend" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Email address</label>
+              <div class="col-md-9">
+                <input id="email" name="email4" type="text" placeholder="Enter the email address of friend" class="form-control">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Unique ID</label>
+              <div class="col-md-9">
+                <input id="email" name="identity" type="text" placeholder="Enter the unique id." class="form-control">
+              </div>
+            </div>
+            
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+</div>
+
+</body>
+</html>

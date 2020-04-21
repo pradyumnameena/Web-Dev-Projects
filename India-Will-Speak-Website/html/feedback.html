@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+<link href="../css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<link rel="shortcut icon" href="../images/fav.png" type="image/png">
+<style type="text/css">
+  body {
+    padding-top:20px;
+      }
+</style>
+<script type="text/javascript">
+  var str="";
+    function validForm(){
+      var n = document.forms["feedback"]["name"].value;
+      var e = document.forms["feedback"]["email"].value;
+      var c = document.forms["feedback"]["message"].value;
+      var name_patt = /^[a-z A-Z]+$/;
+      var email_patt = /^[a-zA-Z0-9]+[@]+[a-zA-Z0-9]+[.]+[a-zA-Z0-9]+$/;
+      if(n.match(name_patt)){
+        
+      }else{
+        var erro = "Enter a valid name.";
+        str = str.concat(erro);
+        str = str.concat("\n");
+      }
+
+      if(e.match(email_patt)){
+
+      }else{
+        var er = "Enter a valid email address.";
+        str = str.concat(er);
+        str = str.concat("\n");
+        }
+
+      if(c.length==0){
+        var s = "Enter a valid message.";
+        str = str.concat(s);
+        str = str.concat("\n");
+        alert(str);
+        str="";
+        return false;
+      }else{
+        if(str.length==0){
+          return true;
+        }else{
+          alert(str);
+          str="";
+          return false;
+        }
+        
+      }
+    }
+</script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form class="form-horizontal" action="" method="post" name="feedback" onsubmit="return validForm()">
+          <fieldset>
+            <legend class="text-center">Contact us</legend>
+    
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="name">Name</label>
+              <div class="col-md-9">
+                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Email input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="email">Your E-mail</label>
+              <div class="col-md-9">
+                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+	</div>
+</div>
+
+</body>
+</html>

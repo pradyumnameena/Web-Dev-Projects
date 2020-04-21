@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../images/fav.png" type="image/png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Brief Introduction</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/confirm.css" rel="stylesheet">
+    <script>
+        function func(){
+            var c = document.forms["confirm"]["rating"].value;
+            if(c!=1 && c!=2 && c!=3 && c!=4 && c!=5 && c!=6 && c!=7 && c!=8 && c!=9 && c!=10){
+                alert("Please enter a valid integer between 1-10.");
+                return false;
+            }else{
+                return true;
+            }
+        }
+    </script>
+  </head>
+
+  <body>
+    <form class="form-signin" action="../php/prate.php" name="confirm" method="post" onsubmit="return func()">
+      <div class="text-center mb-4">
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Rate It</h1>
+        <p>Enter the unique-id of the topic.</p>
+      </div>
+      
+      <div class="form-label-group">
+        <input type="text" id="inputEmail" class="form-control" placeholder="Enter here..." name="identity" required autofocus>
+        <label for="inputEmail">Unique ID of parent</label>
+      </div>
+      
+        <div class="form-label-group">
+        <input type="text" id="inputEmail" class="form-control" placeholder="Enter here..." name="rating" required autofocus>
+        <label for="inputEmail">Rating out of 10</label>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      <p class="mt-5 mb-3 text-muted text-center">&copy; India Will Speak</p>
+    </form>
+  </body>
+</html>
