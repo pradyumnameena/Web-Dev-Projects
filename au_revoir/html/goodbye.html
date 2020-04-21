@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bon Voyage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/goodbye.css">
+	<link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico'>
+</head>
+<body>
+	<div class="row">
+		<div class="col-lg-3 col-md-3"></div>
+		<div class="col-lg-6 col-md-6 form-container">
+			<h1 class="text-center">
+				<br>
+				<font face="Arial" size="7">AU REVOIR</font>
+				<br>
+			</h1>
+			<form class="needs-validation" onsubmit="return validateForm()" action="../php/done.php" name="myform" method="post" novalidate>
+				<div class="form-group">
+				    <label for="validationCustom01">Entry Number</label>
+				    <input type="text" class="form-control form-control-lg" id="validationCustom01" aria-describedby="emailHelp" name="entrynumber" required>
+				    <div class="invalid-feedback">
+				        This field can't be empty
+				    </div>
+  				</div>
+
+  				<div class="form-group">
+			    	<label for="exampleFormControlSelect1">Dedicated to</label>
+				    <select class="custom-select form-control-lg" name="ded" required>
+				      <option>Sai Sir</option>
+				      <option>Sankalpana Maam</option>
+				      <option>Vishakha Maam</option>
+				      <option>Sathvic Sir</option>
+				    </select>
+				    <div class="invalid-feedback">Select one senior</div>
+			  	</div>
+
+			  	<div class="form-group">
+				    <label for="exampleFormControlTextarea1">Message</label>
+				    <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="5" name="message" required></textarea>
+				     <div class="invalid-feedback">
+				        This field can't be empty
+				    </div>
+				</div>
+
+				<div class="form-group text-center">
+					<button class="btn btn-primary" type="submit">Submit form</button>
+				</div>
+				
+			</form>
+		</div>
+		<div class="col-lg-3 col-md-3"></div>
+	</div>
+	<script type="text/javascript" src="../js/gb.js"></script>
+</body>
+</html>

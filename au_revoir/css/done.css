@@ -1,0 +1,18 @@
+html{
+	width: 100vw;
+	height: 100vh;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/done_bg.jpg");
+	background-size: cover;
+}
+
+.message-container{
+	max-width: 60vw;
+	height: 40vh;
+	border-radius: 15%;
+	opacity: 0.8;
+}
